@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tạo một Content Provider"
+        android:textSize="30sp"
+        android:textColor="#FF0000"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách SV thực hành"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textColor="#03A9F4"
+        android:layout_gravity="center"/>
+
+    <ImageButton
+        android:id="@+id/img_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hoso"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Họ và tên"
+        android:textColor="@color/black"
+        android:textColorHint="#03A9F4"
+        android:textSize="22sp"/>
+
+    <EditText
+        android:id="@+id/buoith"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Buổi thực hành"
+        android:textColor="@color/black"
+        android:textColorHint="#03A9F4"
+        android:textSize="22sp"/>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C3B9B9"
+        android:layout_margin="5dp"
+        android:text="Thêm tên"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:onClick="onClickAddName"/>
+
+    <Button
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C3B9B9"
+        android:layout_margin="5dp"
+        android:text="Xem"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:onClick="onClickRetrieveStudents"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text=" "
+        android:gravity="center"
+        android:id="@+id/tv_show"/>
+
+</LinearLayout>
